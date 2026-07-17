@@ -1,4 +1,5 @@
 import news from "../data/news.json";
+import DotGlobe from "./components/DotGlobe";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
