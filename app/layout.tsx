@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.css";\nimport LanguageSwitch from "./components/LanguageSwitch";
 
 export const metadata: Metadata = {
   title: "Worldline — News in Perspective",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}<LanguageSwitch /></body>
     </html>
   );
 }
