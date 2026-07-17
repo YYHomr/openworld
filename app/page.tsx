@@ -29,9 +29,7 @@ export default function Home() {
 
           <div className="globe-stage" aria-label="Abstract black globe illustration">
             <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="globe-shadow" />
-            <div className="globe">
-              <span className="land land-a" /><span className="land land-b" /><span className="land land-c" /><span className="land land-d" /><span className="globe-shine" />
-            </div>
+            <div className="globe"><DotGlobe /></div>
             <div className="globe-note note-top"><b>24:00</b><span>Stories never stop</span></div>
             <div className="globe-note note-bottom"><b>GLOBAL</b><span>Reporting without borders</span></div>
           </div>
