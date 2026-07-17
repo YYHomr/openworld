@@ -1,5 +1,6 @@
 import news from "../../data/news-ar.json";
 import DotGlobe from "../components/DotGlobe";
+import NewsletterForm from "../components/NewsletterForm";
 const Arrow=()=> <span aria-hidden="true">↖</span>;
 export const metadata={title:"وورلدلاين — الأخبار في سياقها",description:"قصص مستقلة وسياق عالمي وأفكار تستحق وقتك."};
 export default function ArabicHome(){const lead=news[0];return <main className="ar-page" dir="rtl" lang="ar">
@@ -13,5 +14,5 @@ export default function ArabicHome(){const lead=news[0];return <main className="
 <section className="home-palestine"><div className="shell home-palestine-grid"><div><p className="eyebrow light"><span/> دليل تاريخي جديد</p><h2>فلسطين،<br/><em>قصة كاملة.</em></h2></div><p>دليل من ستة فصول تقوده الخريطة: التاريخ والنكبة والحياة اليومية والقدس والزيتون والتين وغزة، من منظور فلسطيني.</p><a href="/ar/palestine">استكشف فلسطين <span>↖</span></a></div></section>
 <section className="home-gaza"><div className="shell home-gaza-grid"><div><p className="eyebrow light"><span/> سلسلة رأي جديدة</p><h2>غزة: حياة،<br/><em>حقوق، عودة.</em></h2></div><p>خمس مقالات تضع المدنيين الفلسطينيين والتعليم والمساعدات والإعمار والذاكرة الثقافية في المركز، مع رسوم موثقة وصور صحفية.</p><a href="/ar/gaza">استكشف سلسلة غزة <span>↖</span></a></div></section>
 <section className="manifesto"><div className="shell manifesto-grid"><p className="eyebrow light"><span/> وجهة نظرنا</p><blockquote>«أفضل الأخبار لا تخبرك بما تفكر، بل تمنحك المزيد لتفكر فيه.»</blockquote><a href="#latest">اقرأ الإصدار <Arrow/></a></div></section>
-<section className="newsletter shell" id="newsletter"><div><p className="eyebrow"><span/> ابدأ يومك بمعرفة</p><h2>رسالة واحدة جيدة.<br/>كل صباح.</h2></div><form className="signup-form"><label htmlFor="email">البريد الإلكتروني</label><div><input id="email" type="email" placeholder="you@example.com"/><button type="button">انضم للنشرة <span>←</span></button></div><small>بلا ضوضاء، فقط أهم قصص اليوم.</small></form></section>
+<section className="newsletter shell" id="newsletter"><div><p className="eyebrow"><span/> يُرسل عبر Gmail</p><h2>موجز اليوم،<br/>في بريدك.</h2></div><NewsletterForm lang="ar"/></section>
 <footer className="footer shell"><a className="brand" href="/ar">WORLD<span>LINE</span><i/></a><p>صحافة مستقلة للعقول الفضولية.</p><p>© 2026 وورلدلاين</p></footer></main>}
