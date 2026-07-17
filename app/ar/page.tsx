@@ -1,4 +1,5 @@
 import news from "../../data/news-ar.json";
+import DotGlobe from "../components/DotGlobe";
 const Arrow=()=> <span aria-hidden="true">↖</span>;
 export const metadata={title:"وورلدلاين — الأخبار في سياقها",description:"قصص مستقلة وسياق عالمي وأفكار تستحق وقتك."};
 export default function ArabicHome(){const lead=news[0];return <main className="ar-page" dir="rtl" lang="ar">
