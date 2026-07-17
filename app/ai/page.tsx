@@ -1,0 +1,9 @@
+import LiveAINews from "../components/LiveAINews";
+export const metadata={title:"Latest AI News — Worldline",description:"An automatically updating global feed of the latest artificial intelligence news."};
+export default function AIPage(){return <main className="ai-page">
+ <nav className="nav shell ai-nav"><a className="brand" href="/">WORLD<span>LINE</span><i/></a><div className="nav-links"><a href="/">Home</a><a className="active" href="/ai">AI News</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a></div><a className="edition" href="/ar/ai">العربية <span>↗</span></a></nav>
+ <header className="ai-hero shell"><div><p className="eyebrow"><span/> Automatic live desk</p><h1>Artificial<br/><em>intelligence, now.</em></h1></div><div><b>OPEN FEED / 15 MIN</b><p>The latest reporting on models, companies, research, policy and the people affected by AI—collected automatically from the open GDELT news database.</p><a href="#live">Open the live feed ↓</a></div></header>
+ <section className="ai-feed shell" id="live"><div className="section-heading"><div><p className="eyebrow"><span/> Latest signals</p><h2>AI news, continuously updated.</h2></div><p>Links open at the original publisher. Headlines and images belong to their respective sources.</p></div><LiveAINews lang="en"/></section>
+ <section className="ai-about"><div className="shell"><b>How it works</b><p>Worldline queries GDELT’s open news index, removes repeated headlines and caches results for 15 minutes. No API key, tracking profile or paid news service is required.</p><a href="https://www.gdeltproject.org/" target="_blank" rel="noreferrer">About GDELT ↗</a></div></section>
+ <footer className="footer shell"><a className="brand" href="/">WORLD<span>LINE</span><i/></a><p>Live signals, original sources.</p><p>© 2026 Worldline Journal</p></footer>
+ </main>}
