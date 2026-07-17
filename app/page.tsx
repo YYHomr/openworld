@@ -11,7 +11,7 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/ar">العربية</a>
+            <a href="#latest">Latest</a><a href="/ai">AI</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/ar">العربية</a>
           </div>
           <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
         </nav>
@@ -63,6 +63,8 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="home-ai"><div className="shell home-ai-grid"><div><p className="eyebrow"><span/> Live automatic feed</p><h2>AI news,<br/><em>updated itself.</em></h2></div><p>Fresh reporting on models, research, policy and companies, pulled from an open global news database every 15 minutes.</p><a href="/ai">Open the AI desk ↗</a></div></section>
 
       <section className="home-palestine"><div className="shell home-palestine-grid"><div><p className="eyebrow light"><span /> New history guide</p><h2>Palestine,<br /><em>remembered whole.</em></h2></div><p>A map-led, six-part guide to history, the Nakba, daily life, Al-Quds, the olive and fig, and Gaza—written from a Palestinian perspective.</p><a href="/palestine">Explore Palestine <span>↗</span></a></div></section>
 
