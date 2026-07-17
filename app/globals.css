@@ -370,3 +370,13 @@ button,input { font:inherit; }
 .ar-page .ai-feed-meta button{margin-right:auto;margin-left:0}.ar-page .ai-card-visual>span{left:auto;right:16px}.ar-page .ai-card-copy>p span{float:left}.ar-page .ai-hero>div:last-child>p,.ar-page .ai-about p{line-height:1.9}
 @media(prefers-color-scheme:dark){.home-ai{background:#151a2a;color:#f3efe4;border-color:rgba(255,255,255,.15)}.home-ai p{color:#b9bfd2}.home-ai a{border-color:#f3efe4}.home-ai h2 em{color:#809cff}.ai-page{--ai-blue:#809cff}.ai-hero>div:last-child>p{color:#aaa397}.ai-hero>div:last-child>a{background:#f3efe4;color:#111}.ai-news-card{background:#0d0d0b}.ai-news-card:hover{background:#1b1b18}.ai-card-copy>div time,.ai-card-copy>p{color:#aaa397}}
 @media(max-width:760px){.home-ai{padding:75px 0}.home-ai-grid{display:block}.home-ai p{margin:28px 0}.home-ai a{display:inline-block}.ai-hero{display:block;padding:65px 0}.ai-hero h1{font-size:clamp(62px,19vw,92px)}.ai-hero>div:last-child{margin-top:60px}.ai-feed{padding:80px 0}.ai-feed-meta{flex-wrap:wrap;padding:15px 0}.ai-feed-meta button{width:100%;text-align:left;margin:0}.ar-page .ai-feed-meta button{text-align:right;margin:0}.ai-news-grid{display:block;background:none;border:0}.ai-news-card{display:block;border:1px solid var(--line);margin-bottom:18px}.ai-news-card.lead{display:block}.ai-card-visual,.ai-news-card.lead .ai-card-visual{height:280px}.ai-news-card.lead .ai-card-copy h2{font-size:32px}.ai-about>div{display:block}.ai-about p{margin:28px 0}.ai-about a{display:inline-block}}
+
+
+/* Secure Gmail news brief */
+.signup-form>div{position:relative}
+.signup-form button:disabled{cursor:wait;opacity:.58}
+.signup-honeypot{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.signup-status{display:block;min-height:1.5em;transition:color .2s}
+.signup-status.success{color:#26734d}
+.signup-status.error{color:#b52b25}
+@media(prefers-color-scheme:dark){.signup-status.success{color:#67c893}.signup-status.error{color:#ff8278}}
