@@ -10,7 +10,7 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="#latest">World</a><a href="#ideas">Ideas</a><a href="#newsletter">Brief</a>
+            <a href="#latest">Latest</a><a href="#latest">World</a><a href="/gaza">Gaza</a><a href="#newsletter">Brief</a>
           </div>
           <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
         </nav>
@@ -61,6 +61,18 @@ export default function Home() {
               <span className="story-number">{story.number}</span><span className="story-category">{story.category}</span><h3>{story.title}</h3><span className="story-time">{story.readTime}</span><span className="story-arrow"><Arrow /></span>
             </a>
           ))}
+        </div>
+      </section>
+
+
+      <section className="home-gaza">
+        <div className="shell home-gaza-grid">
+          <div>
+            <p className="eyebrow light"><span /> New editorial series</p>
+            <h2>Gaza: life,<br /><em>rights, return.</em></h2>
+          </div>
+          <p>Five essays centering Palestinian civilians, education, aid, reconstruction and cultural memory—with source-backed graphs and documentary photography.</p>
+          <a href="/gaza">Explore the Gaza series <span>↗</span></a>
         </div>
       </section>
 

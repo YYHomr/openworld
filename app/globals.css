@@ -174,3 +174,64 @@ button,input { font:inherit; }
   .article-body { display:block; padding-top:70px; padding-bottom:80px; }.article-body aside { margin-bottom:60px; }
   .article-copy>p { font-size:19px; }.related-grid { display:block; }.related-grid a { display:block; border-right:0; border-bottom:1px solid var(--line); min-height:0; }
 }
+
+/* Gaza editorial series */
+.home-gaza { background:#0b2b20; color:#fff; padding:100px 0; border-bottom:1px solid rgba(255,255,255,.2); }
+.home-gaza-grid { display:grid; grid-template-columns:1.2fr 1fr .55fr; gap:60px; align-items:end; }
+.home-gaza h2,.gaza-hub-hero h1 { font:500 clamp(58px,6vw,94px)/.92 Georgia,serif; letter-spacing:-.06em; margin:0; }
+.home-gaza h2 em,.gaza-hub-hero h1 em { color:#e6533e; font-weight:400; }
+.home-gaza-grid>p { font:18px/1.6 Georgia,serif; color:#d7dfd9; margin:0; }
+.home-gaza-grid>a { font-size:9px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; border-bottom:1px solid #fff; padding-bottom:10px; }
+.gaza-hub,.gaza-blog { --gaza-green:#0b2b20; --gaza-red:#d94b36; background:#f5f0e4; min-height:100vh; }
+.gaza-nav { border-color:rgba(17,17,15,.2); }.gaza-nav .active { color:var(--gaza-red); }
+.gaza-hub-hero { min-height:580px; display:flex; flex-direction:column; justify-content:center; position:relative; }
+.gaza-flagline { position:absolute; right:0; top:55px; display:flex; width:150px; height:7px; }
+.gaza-flagline i { flex:1; }.gaza-flagline i:nth-child(1){background:#111}.gaza-flagline i:nth-child(2){background:#fff}.gaza-flagline i:nth-child(3){background:#16824b}
+.gaza-hub-hero h1 { max-width:1000px; font-size:clamp(70px,9vw,140px); }
+.gaza-hub-hero>p:not(.eyebrow) { font:20px/1.55 Georgia,serif; max-width:690px; color:#5f5a50; margin:36px 0; }
+.gaza-hub-hero>a { width:max-content; background:var(--gaza-green); color:#fff; padding:18px 22px; text-transform:uppercase; font-size:9px; font-weight:800; letter-spacing:.14em; }
+.gaza-hub-hero>a span { margin-left:40px; }
+.gaza-hero-image { height:620px; position:relative; overflow:hidden; background:#111; }
+.gaza-hero-image img,.gaza-photo img { width:100%; height:100%; object-fit:cover; display:block; filter:saturate(.75) contrast(1.06); }
+.gaza-hero-image::after { content:""; position:absolute; inset:40% 0 0; background:linear-gradient(transparent,rgba(0,0,0,.78)); }
+.gaza-hero-image>div { position:absolute; z-index:2; bottom:32px; left:34px; right:34px; color:white; display:flex; justify-content:space-between; align-items:end; }
+.gaza-hero-image b { font:32px/1.1 Georgia,serif; max-width:600px; }.gaza-hero-image span { font-size:9px; letter-spacing:.1em; text-transform:uppercase; }
+.gaza-essay-list { padding:120px 0; }
+.gaza-card { min-height:230px; display:grid; grid-template-columns:90px 1fr 130px; gap:30px; align-items:center; border-top:1px solid var(--line); transition:background .2s,padding .2s; }
+.gaza-card:last-child { border-bottom:1px solid var(--line); }.gaza-card:hover { background:#ebe3d2; padding-inline:20px; }
+.gaza-card>span { font:48px Georgia,serif; color:var(--gaza-red); }.gaza-card b { color:var(--gaza-green); font-size:9px; text-transform:uppercase; letter-spacing:.13em; }
+.gaza-card h2 { font:42px/1.05 Georgia,serif; letter-spacing:-.035em; margin:14px 0; }.gaza-card p { color:#656057; margin:0; max-width:800px; font:15px/1.5 Georgia,serif; }
+.gaza-card>i { justify-self:end; font-style:normal; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.gaza-article-header { padding:95px 0 65px; max-width:1220px; }
+.gaza-label { display:flex; justify-content:space-between; margin:0 0 70px; font-size:9px; text-transform:uppercase; letter-spacing:.14em; font-weight:800; }
+.gaza-label span { color:var(--gaza-red); }.gaza-label b { color:#736d62; }
+.gaza-article-header h1 { font:500 clamp(64px,8.5vw,128px)/.89 Georgia,serif; letter-spacing:-.065em; max-width:1150px; margin:0; }
+.gaza-dek { max-width:850px; font:23px/1.55 Georgia,serif; color:#5f5a50; margin:38px 0; }
+.gaza-photo { height:min(70vw,740px); margin-bottom:0; }.gaza-photo figcaption { display:flex; justify-content:space-between; gap:20px; padding:12px 0; font-size:9px; text-transform:uppercase; letter-spacing:.08em; color:#6e685f; }
+.gaza-story { display:grid; grid-template-columns:290px minmax(0,760px); justify-content:center; gap:100px; padding:130px 0; }
+.gaza-story>aside { height:max-content; position:sticky; top:30px; border-top:3px solid var(--gaza-red); padding-top:18px; }
+.gaza-story>aside>span { color:var(--gaza-red); font-size:9px; text-transform:uppercase; letter-spacing:.14em; font-weight:800; }
+.gaza-story blockquote { font:27px/1.35 Georgia,serif; margin:30px 0; }.gaza-story>aside>a { font-size:9px; text-transform:uppercase; letter-spacing:.12em; font-weight:800; }
+.gaza-copy>p { font:21px/1.78 Georgia,serif; margin:0 0 36px; color:#292723; }
+.gaza-chart { margin:75px -70px; padding:40px; background:var(--gaza-green); color:#fff; }
+.gaza-chart figcaption>span { font-size:9px; text-transform:uppercase; letter-spacing:.14em; color:#ef7b68; font-weight:800; }
+.gaza-chart h2 { font:42px/1.05 Georgia,serif; margin:20px 0 12px; }.gaza-chart figcaption p { color:#bdcbc4; font:14px/1.5 Georgia,serif; max-width:580px; }
+.chart-bars { margin:40px 0 28px; }.chart-row { margin:22px 0; }.chart-row>div { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-bottom:9px; }
+.chart-row span { font:14px Georgia,serif; }.chart-row b { font-size:18px; }.chart-row small { font-size:8px; text-transform:uppercase; letter-spacing:.08em; color:#bdcbc4; }
+.chart-row>i { height:11px; display:block; background:rgba(255,255,255,.12); overflow:hidden; }.chart-row em { display:block; height:100%; background:#ef5b46; min-width:3px; }
+.gaza-chart>a { color:#bdcbc4; font-size:8px; text-transform:uppercase; letter-spacing:.1em; border-bottom:1px solid #70857a; padding-bottom:6px; }
+.gaza-note { margin-top:70px; padding:25px; border:1px solid var(--line); }.gaza-note b { color:var(--gaza-red); text-transform:uppercase; font-size:9px; letter-spacing:.13em; }
+.gaza-note p { font:14px/1.5 Georgia,serif; color:#686259; margin:12px 0 0; }
+.next-gaza { display:block; background:#111; color:#fff; padding:60px; margin-bottom:100px; position:relative; }
+.next-gaza>span,.next-gaza>b { font-size:9px; text-transform:uppercase; letter-spacing:.13em; }.next-gaza>span { color:#ef6a55; }.next-gaza h2 { font:48px/1.05 Georgia,serif; max-width:800px; margin:35px 0 0; }.next-gaza>b { position:absolute; right:60px; bottom:60px; }
+@media(max-width:760px){
+ .home-gaza { padding:75px 0; }.home-gaza-grid { display:block; }.home-gaza-grid>p { margin:30px 0; }.home-gaza-grid>a { display:inline-block; }
+ .gaza-hub-hero { min-height:520px; }.gaza-hub-hero h1 { font-size:clamp(66px,21vw,100px); }.gaza-hub-hero>p:not(.eyebrow){font-size:17px}
+ .gaza-hero-image { width:100%; height:480px; }.gaza-hero-image>div { display:block; }.gaza-hero-image span { display:block; margin-top:15px; }
+ .gaza-card { grid-template-columns:45px 1fr; padding:30px 0; }.gaza-card>span { font-size:30px; }.gaza-card h2 { font-size:31px; }.gaza-card>i { grid-column:2; justify-self:start; }
+ .gaza-article-header { padding:60px 0 45px; }.gaza-label { margin-bottom:50px; }.gaza-article-header h1 { font-size:clamp(55px,17vw,82px); }.gaza-dek{font-size:19px}
+ .gaza-photo { width:100%; height:430px; }.gaza-photo figcaption { padding-inline:16px; display:block; }.gaza-photo figcaption a { display:block; margin-top:6px; }
+ .gaza-story { display:block; padding:90px 0; }.gaza-story>aside { position:static; margin-bottom:70px; }.gaza-copy>p { font-size:19px; }
+ .gaza-chart { margin:60px -16px; padding:28px 20px; }.gaza-chart h2 { font-size:34px; }.chart-row>div { align-items:start; }.chart-row b { white-space:nowrap; }
+ .next-gaza { padding:36px; margin-bottom:70px; }.next-gaza h2 { font-size:36px; }.next-gaza>b { position:static; display:block; margin-top:30px; }
+}

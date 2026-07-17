@@ -16,3 +16,8 @@ python scripts/add-news.py --slug example --category World --title "Headline" --
 ```
 
 The article appears automatically at `/news/example`.
+
+
+## Gaza editorial series
+
+Five opinion and analysis essays live at `/gaza`. Their content, photography credits and chart sources are stored in `data/gaza.json`.
