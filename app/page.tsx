@@ -1,5 +1,6 @@
 import news from "../data/news.json";
 import DotGlobe from "./components/DotGlobe";
+import NewsletterForm from "./components/NewsletterForm";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
@@ -84,8 +85,8 @@ export default function Home() {
       </section>
 
       <section className="newsletter shell" id="newsletter">
-        <div><p className="eyebrow"><span /> Start informed</p><h2>One good email.<br />Every morning.</h2></div>
-        <form className="signup-form"><label htmlFor="email">Email address</label><div><input id="email" type="email" placeholder="you@example.com" required /><button type="button" aria-label="Subscribe">Join the brief <span>→</span></button></div><small>No noise. Just the day&apos;s essential stories.</small></form>
+        <div><p className="eyebrow"><span /> Delivered through Gmail</p><h2>Today&apos;s brief,<br />in your inbox.</h2></div>
+        <NewsletterForm lang="en" />
       </section>
 
       <footer className="footer shell"><a className="brand" href="#top">WORLD<span>LINE</span><i /></a><p>Independent journalism for curious minds.</p><p>© 2026 Worldline Journal</p></footer>
