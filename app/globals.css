@@ -320,3 +320,44 @@ button,input { font:inherit; }
   display:block;
   border-radius:50%;
 }
+
+
+/* Persistent language control */
+.language-switch{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:9px;padding:7px 9px;background:rgba(251,250,245,.88);border:1px solid rgba(17,17,15,.22);border-radius:999px;box-shadow:0 10px 35px rgba(0,0,0,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.language-switch a{min-width:37px;height:32px;padding:0 9px;border-radius:999px;display:grid;place-items:center;font-size:10px;font-weight:900;letter-spacing:.08em;color:#6b665d;transition:background .2s,color .2s,transform .2s}
+.language-switch a:hover{transform:translateY(-1px);color:#11110f}.language-switch a.current{background:#11110f;color:#fff}.language-switch>span{width:1px;height:17px;background:rgba(17,17,15,.18)}
+
+/* Automatic system dark theme */
+@media (prefers-color-scheme:dark){
+ :root{--ink:#f3efe4;--cream:#181815;--paper:#0d0d0b;--line:rgba(255,255,255,.17);--red:#ef654f;color-scheme:dark}
+ html,body{background:#0d0d0b;color:#f3efe4}
+ .hero,.article-page,.article-nav,.gaza-hub,.gaza-blog,.palestine-hub,.palestine-article,.truth-page{background:#11110e;color:#f3efe4}
+ .hero::before{opacity:.11;background-image:radial-gradient(rgba(255,255,255,.2) .55px,transparent .65px)}
+ .nav,.article-nav,.gaza-nav,.palestine-nav,.truth-nav{border-color:rgba(255,255,255,.18)}
+ .brand i{background:#ef654f}
+ .dek,.brief-lead p,.section-heading>p,.gaza-hub-hero>p:not(.eyebrow),.gaza-dek,.palestine-hero>div>p:not(.eyebrow),.palestine-dek,.truth-head>p:not(.eyebrow){color:#bdb7aa}
+ .globe-note span,.story-category,.story-time,.article-kicker,.gaza-label b,.palestine-article-head>p b{color:#aaa397}
+ .brief-card{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.17)}
+ .button-dark,.gaza-hub-hero>a,.palestine-hero>div>a{background:#f3efe4;color:#11110f}
+ .button-dark:hover{background:#ef654f;color:#fff}
+ .text-link{border-color:#f3efe4}
+ .story-row:hover,.related-grid a:hover,.gaza-card:hover,.palestine-card:hover{background:#20201b}
+ .manifesto,.home-palestine,.truth-context,.next-gaza,.next-palestine{background:#070706}
+ .newsletter input{color:#f3efe4}.newsletter input::placeholder{color:#777167}.signup-form>div{border-color:#f3efe4}
+ .signup-form button{color:#f3efe4}
+ .article-visual,.source-card,.palestine-sources{background:#1b1b17}
+ .article-copy>p,.gaza-copy>p,.palestine-copy>p{color:#ddd8cc}
+ .source-card p,.gaza-note p,.palestine-method p{color:#aaa397}
+ .gaza-card p,.palestine-card p,.truth-image p{color:#aaa397}
+ .gaza-photo figcaption,.palestine-photo figcaption{color:#aaa397}
+ .gaza-note,.palestine-method{border-color:rgba(255,255,255,.17)}
+ .palestine-word{border-color:rgba(255,255,255,.15)}.palestine-word:before{border-color:rgba(255,255,255,.15)}.palestine-word b{color:#4e9a70}
+ .palestine-intro>p:last-child{color:#aaa397}
+ .map-grid figure{background:#e8e1d1;color:#11110f}
+ .truth-warning{border-color:#e75348}.truth-warning b{background:#b52b25}.truth-warning span{background:#171713}
+ .truth-reveal summary{background:#a82722}.truth-image>div{background:#050504}.truth-image figcaption{border-color:rgba(255,255,255,.17)}
+ .truth-banner{background:#7d211e}
+ .language-switch{background:rgba(22,22,19,.9);border-color:rgba(255,255,255,.2);box-shadow:0 10px 35px rgba(0,0,0,.45)}
+ .language-switch a{color:#aaa397}.language-switch a:hover{color:#fff}.language-switch a.current{background:#f3efe4;color:#11110f}.language-switch>span{background:rgba(255,255,255,.2)}
+}
+@media(max-width:760px){.language-switch{right:14px;bottom:14px}.language-switch a{min-width:34px;height:30px}}
