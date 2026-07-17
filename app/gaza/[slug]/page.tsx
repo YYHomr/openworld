@@ -41,7 +41,7 @@ export default async function GazaBlog({ params }: { params: Promise<{ slug: str
     <main className="gaza-blog">
       <nav className="nav shell gaza-nav" aria-label="Main navigation">
         <a className="brand" href="/">WORLD<span>LINE</span><i /></a>
-        <div className="nav-links"><a href="/">Home</a><a href="/gaza">Gaza series</a><a href="/#latest">Latest</a></div>
+        <div className="nav-links"><a href="/">Home</a><a href="/gaza">Gaza series</a><a href={`/ar/gaza/${blog.slug}`}>العربية</a></div>
         <a className="edition" href="/gaza">All five essays <span>←</span></a>
       </nav>
       <article>

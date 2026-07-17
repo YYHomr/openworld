@@ -11,7 +11,7 @@ export default function GazaIndex() {
     <main className="gaza-hub">
       <nav className="nav shell gaza-nav" aria-label="Main navigation">
         <a className="brand" href="/">WORLD<span>LINE</span><i /></a>
-        <div className="nav-links"><a href="/">Home</a><a href="/#latest">Latest</a><a className="active" href="/gaza">Gaza</a></div>
+        <div className="nav-links"><a href="/">Home</a><a href="/#latest">Latest</a><a className="active" href="/gaza">Gaza</a><a href="/ar/gaza">العربية</a></div>
         <a className="edition" href="#essays">Five essays <span>↓</span></a>
       </nav>
       <header className="gaza-hub-hero shell">

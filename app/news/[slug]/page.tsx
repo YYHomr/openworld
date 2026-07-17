@@ -26,7 +26,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
     <main className="article-page">
       <nav className="nav shell article-nav" aria-label="Main navigation">
         <a className="brand" href="/" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
-        <div className="nav-links"><a href="/#latest">Latest</a><a href="/#latest">World</a><a href="/#ideas">Ideas</a></div>
+        <div className="nav-links"><a href="/#latest">Latest</a><a href="/#latest">World</a><a href={`/ar/news/${article.slug}`}>العربية</a></div>
         <a className="edition" href="/#latest">Back to all stories <span>←</span></a>
       </nav>
 

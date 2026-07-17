@@ -10,7 +10,7 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="#latest">World</a><a href="/gaza">Gaza</a><a href="#newsletter">Brief</a>
+            <a href="#latest">Latest</a><a href="#latest">World</a><a href="/gaza">Gaza</a><a href="/ar">العربية</a>
           </div>
           <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
         </nav>

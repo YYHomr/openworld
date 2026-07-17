@@ -235,3 +235,33 @@ button,input { font:inherit; }
  .gaza-chart { margin:60px -16px; padding:28px 20px; }.gaza-chart h2 { font-size:34px; }.chart-row>div { align-items:start; }.chart-row b { white-space:nowrap; }
  .next-gaza { padding:36px; margin-bottom:70px; }.next-gaza h2 { font-size:36px; }.next-gaza>b { position:static; display:block; margin-top:30px; }
 }
+
+/* Arabic localization */
+.ar-page { direction:rtl; text-align:right; font-family:Tahoma,Arial,sans-serif; }
+.ar-page .hero h1,.ar-page h1,.ar-page h2,.ar-page h3,.ar-page p,.ar-page blockquote,.ar-page .dek { font-family:Tahoma,Arial,sans-serif; }
+.ar-page .brand { direction:ltr; }
+.ar-page .eyebrow { letter-spacing:0; }
+.ar-page .eyebrow>span { order:0; }
+.ar-page .dek { margin-right:6px; margin-left:0; }
+.ar-page .hero-actions { margin-right:6px; margin-left:0; }
+.ar-page .brief-card { margin-right:20px; margin-left:0; }
+.ar-page .brief-lead i { transform:scaleX(-1); }
+.ar-page .story-row h3 { font-family:Tahoma,Arial,sans-serif; }
+.ar-page .section-heading>p { justify-self:start; }
+.ar-page .manifesto a { justify-self:start; }
+.ar-page .footer p:last-child { text-align:left; }
+.ar-page .footer p:nth-child(2) { text-align:center; }
+.ar-page .article-kicker time { margin-right:auto; margin-left:0; }
+.ar-page .first-paragraph::first-letter { float:right; padding:12px 0 0 12px; }
+.ar-page .source-card { border-left:0; border-right:3px solid var(--red); }
+.ar-page .article-body li,.ar-page .article-copy>p,.ar-page .gaza-copy>p { line-height:1.95; }
+.ar-page .gaza-flagline { left:0; right:auto; }
+.ar-page .gaza-story>aside { border-top-color:var(--gaza-red); }
+.ar-page .gaza-photo figcaption,.ar-page .chart-row>div { direction:rtl; }
+.ar-page .next-gaza>b { left:60px; right:auto; }
+@media(max-width:760px){
+ .ar-page .dek,.ar-page .hero-actions { margin-right:0; }
+ .ar-page .brief-card { margin-right:0; }
+ .ar-page .footer p:nth-child(2),.ar-page .footer p:last-child { text-align:right; }
+ .ar-page .next-gaza>b { position:static; }
+}

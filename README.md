@@ -21,3 +21,8 @@ The article appears automatically at `/news/example`.
 ## Gaza editorial series
 
 Five opinion and analysis essays live at `/gaza`. Their content, photography credits and chart sources are stored in `data/gaza.json`.
+
+
+## Arabic
+
+Complete Arabic localization is available under `/ar`, including all news and Gaza editorial pages.
