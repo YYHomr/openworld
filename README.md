@@ -1,6 +1,6 @@
 # Worldline News
 
-A responsive editorial news homepage with a cream-and-white visual system, a sculptural black globe, live brief, featured stories, and newsletter section.
+A responsive editorial news site with ten current stories and one automatically generated page per article.
 
 ## Run locally
 
@@ -9,4 +9,10 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+## Add another article
+
+```bash
+python scripts/add-news.py --slug example --category World --title "Headline" --dek "Summary" --source Reuters --source-url "https://example.com" --paragraph "First paragraph" --paragraph "Second paragraph"
+```
+
+The article appears automatically at `/news/example`.

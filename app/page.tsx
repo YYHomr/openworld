@@ -1,21 +1,18 @@
+import news from "../data/news.json";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
-const stories = [
-  { number: "01", category: "Technology", title: "The quiet race to redesign how the world computes", time: "6 min read" },
-  { number: "02", category: "Culture", title: "Why small cinemas are becoming big cultural landmarks", time: "4 min read" },
-  { number: "03", category: "Cities", title: "The new public spaces making cities feel human again", time: "8 min read" },
-];
-
 export default function Home() {
+  const lead = news[0];
   return (
     <main>
       <section className="hero" id="top">
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="#world">World</a><a href="#ideas">Ideas</a><a href="#culture">Culture</a>
+            <a href="#latest">Latest</a><a href="#latest">World</a><a href="#ideas">Ideas</a><a href="#newsletter">Brief</a>
           </div>
-          <a className="edition" href="#newsletter">The Daily Edition <span>↗</span></a>
+          <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
         </nav>
 
         <div className="hero-grid shell">
@@ -39,36 +36,36 @@ export default function Home() {
           </div>
 
           <aside className="brief-card">
-            <div className="brief-head"><p><span className="live-dot" /> Live brief</p><time>Friday, July 17</time></div>
-            <a className="brief-lead" href="#story">
-              <span>World / 09:42</span><h2>A new chapter in global cooperation is taking shape</h2>
-              <p>Leaders meet with climate, trade, and technology at the center of the agenda.</p><i><Arrow /></i>
+            <div className="brief-head"><p><span className="live-dot" /> Lead story</p><time>July 17, 2026</time></div>
+            <a className="brief-lead" href={`/news/${lead.slug}`}>
+              <span>{lead.category} / Latest</span><h2>{lead.title}</h2>
+              <p>{lead.dek}</p><i><Arrow /></i>
             </a>
-            <div className="brief-ticker"><span>Also today</span><p>Markets steady as new data arrives</p><b>+2</b></div>
+            <div className="brief-ticker"><span>Today</span><p>Ten essential stories, one clear edition</p><b>10</b></div>
           </aside>
         </div>
 
         <div className="topic-strip shell" aria-label="Popular topics">
-          <span>Follow the story</span><a href="#climate">Climate</a><a href="#ai">Artificial intelligence</a><a href="#design">Design</a><a href="#future">The future of cities</a><a className="all-topics" href="#ideas">All topics <Arrow /></a>
+          <span>Follow the story</span><a href="#latest">Climate</a><a href="#latest">Artificial intelligence</a><a href="#latest">Markets</a><a href="#latest">Science & space</a><a className="all-topics" href="#latest">All stories <Arrow /></a>
         </div>
       </section>
 
       <section className="latest shell" id="latest">
         <div className="section-heading">
-          <div><p className="eyebrow"><span /> Editor&apos;s selection</p><h2>Worth your time.</h2></div>
-          <p>Three thoughtful reads to move beyond the headline and see the bigger picture.</p>
+          <div><p className="eyebrow"><span /> Updated July 17, 2026</p><h2>The latest ten.</h2></div>
+          <p>Ten current stories across world affairs, technology, science, climate and business—each with its own complete page.</p>
         </div>
         <div className="story-list">
-          {stories.map((story) => (
-            <a className="story-row" href="#story" key={story.number}>
-              <span className="story-number">{story.number}</span><span className="story-category">{story.category}</span><h3>{story.title}</h3><span className="story-time">{story.time}</span><span className="story-arrow"><Arrow /></span>
+          {news.map((story) => (
+            <a className="story-row" href={`/news/${story.slug}`} key={story.number}>
+              <span className="story-number">{story.number}</span><span className="story-category">{story.category}</span><h3>{story.title}</h3><span className="story-time">{story.readTime}</span><span className="story-arrow"><Arrow /></span>
             </a>
           ))}
         </div>
       </section>
 
       <section className="manifesto" id="ideas">
-        <div className="shell manifesto-grid"><p className="eyebrow light"><span /> Our point of view</p><blockquote>“The best news doesn&apos;t tell you what to think. It gives you more to think about.”</blockquote><a href="#about">How we work <Arrow /></a></div>
+        <div className="shell manifesto-grid"><p className="eyebrow light"><span /> Our point of view</p><blockquote>“The best news doesn&apos;t tell you what to think. It gives you more to think about.”</blockquote><a href="#latest">Read the edition <Arrow /></a></div>
       </section>
 
       <section className="newsletter shell" id="newsletter">
