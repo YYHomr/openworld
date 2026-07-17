@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";\nimport LanguageSwitch from "./components/LanguageSwitch";
+import "./globals.css";
+import LanguageSwitch from "./components/LanguageSwitch";
 
 export const metadata: Metadata = {
   title: "Worldline — News in Perspective",
