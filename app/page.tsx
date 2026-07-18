@@ -12,9 +12,9 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="/wlb">WLB</a><a href="/kids">Kids</a><a href="/ai">AI</a><a href="/research">Research</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/about">About</a>
+            <a href="#latest">Latest</a><a href="/date">By date</a><a href="/wlb">WLB</a><a href="/kids">Kids</a><a href="/ai">AI</a><a href="/research">Research</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/about">About</a>
           </div>
-          <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
+          <a className="edition" href="/date/2026-07-18">18 July edition <span>↗</span></a>
         </nav>
 
         <div className="hero-grid shell">
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           <aside className="brief-card">
-            <div className="brief-head"><p><span className="live-dot" /> Lead story</p><time>July 17, 2026</time></div>
+            <div className="brief-head"><p><span className="live-dot" /> Lead story</p><time>July 18, 2026</time></div>
             <a className="brief-lead" href={`/news/${lead.slug}`}>
               <span>{lead.category} / Latest</span><h2>{lead.title}</h2>
               <p>{lead.dek}</p><i><Arrow /></i>
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section className="latest shell" id="latest">
         <div className="section-heading">
-          <div><p className="eyebrow"><span /> Updated July 17, 2026</p><h2>The latest ten.</h2></div>
+          <div><p className="eyebrow"><span /> Updated July 18, 2026 · <a href="/date">Browse by date</a></p><h2>The latest ten.</h2></div>
           <p>Ten current stories across world affairs, technology, science, climate and business—each with its own complete page.</p>
         </div>
         <div className="story-list">
