@@ -1,0 +1,4 @@
+import type {Metadata} from "next";import {notFound} from "next/navigation";import DateEdition from "../../../components/DateEdition";import current from "../../../../data/news-2026-07-18-ar.json";import previous from "../../../../data/archive/news-2026-07-17-ar.json";
+const editions:Record<string,typeof current>={"2026-07-18":current,"2026-07-17":previous};export function generateStaticParams(){return Object.keys(editions).map(date=>({date}))}
+export async function generateMetadata({params}:{params:Promise<{date:string}>}):Promise<Metadata>{const {date}=await params;return editions[date]?{title:`أخبار ${date} — وورلدلاين`,description:`عشر قصص موثقة من وورلدلاين بتاريخ ${date}.`}:{}}
+export default async function ArabicDatedEdition({params}:{params:Promise<{date:string}>}){const {date}=await params;const stories=editions[date];if(!stories)notFound();return <DateEdition stories={stories} dateKey={date} lang="ar"/>}
