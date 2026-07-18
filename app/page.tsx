@@ -12,7 +12,7 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="/ai">AI</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/ar">العربية</a>
+            <a href="#latest">Latest</a><a href="/ai">AI</a><a href="/research">Research</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/about">About</a>
           </div>
           <a className="edition" href="#latest">10 latest stories <span>↗</span></a>
         </nav>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className="topic-strip shell" aria-label="Popular topics">
-          <span>Follow the story</span><a href="#latest">Climate</a><a href="#latest">Artificial intelligence</a><a href="#latest">Markets</a><a href="#latest">Science & space</a><a className="all-topics" href="#latest">All stories <Arrow /></a>
+          <span>Research desk</span><a href="/research/palestine">Palestine</a><a href="/research/sudan">Sudan</a><a href="/research/african-hunger">African hunger</a><a href="/research/trump">Trump</a><a href="/research/netanyahu">Netanyahu</a><a className="all-topics" href="/research">All dossiers <Arrow /></a>
         </div>
       </section>
 
@@ -66,6 +66,8 @@ export default function Home() {
 
 
       <section className="home-ai"><div className="shell home-ai-grid"><div><p className="eyebrow"><span/> Live automatic feed</p><h2>AI news,<br/><em>updated itself.</em></h2></div><p>Fresh reporting on models, research, policy and companies, pulled from an open global news database every 15 minutes.</p><a href="/ai">Open the AI desk ↗</a></div></section>
+
+      <section className="home-research"><div className="shell"><div className="home-research-head"><div><p className="eyebrow light"><span/> Deep research · verified 18 July 2026</p><h2>Memory,<br/><em>with receipts.</em></h2></div><p>Five sourced dossiers from a Palestinian and Arab perspective—clear about our position, precise about the evidence.</p><a href="/research">Open the research desk ↗</a></div><div className="home-research-list"><a href="/research/palestine"><span>01</span><b>Palestine</b><i>Law, land and life ↗</i></a><a href="/research/sudan"><span>02</span><b>Sudan</b><i>Civilians before generals ↗</i></a><a href="/research/african-hunger"><span>03</span><b>African hunger</b><i>Famines are made ↗</i></a><a href="/research/trump"><span>04</span><b>Trump</b><i>Power and Palestine ↗</i></a><a href="/research/netanyahu"><span>05</span><b>Netanyahu</b><i>Command and accountability ↗</i></a></div></div></section>
 
       <section className="home-palestine"><div className="shell home-palestine-grid"><div><p className="eyebrow light"><span /> New history guide</p><h2>Palestine,<br /><em>remembered whole.</em></h2></div><p>A map-led, six-part guide to history, the Nakba, daily life, Al-Quds, the olive and fig, and Gaza—written from a Palestinian perspective.</p><a href="/palestine">Explore Palestine <span>↗</span></a></div></section>
 
@@ -89,7 +91,7 @@ export default function Home() {
         <NewsletterForm lang="en" />
       </section>
 
-      <footer className="footer shell"><a className="brand" href="#top">WORLD<span>LINE</span><i /></a><p>Independent journalism for curious minds.</p><p>© 2026 Worldline Journal</p></footer>
+      <footer className="footer shell"><a className="brand" href="#top">WORLD<span>LINE</span><i /></a><p>Independent journalism for curious minds. <a href="/about">About VOAI ↗</a></p><p>© 2026 Worldline Journal</p></footer>
     </main>
   );
 }
