@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
     product:{name:name || null,brands:brands || null,image:text(product.image_front_url)||null,quantity:text(product.quantity)||null,categories:text(product.categories)||null,countries:text(product.countries)||null,origins:origins||null,manufacturingPlaces:manufacturing||null,nutriscore:text(product.nutriscore_grade)||null,ecoscore:text(product.ecoscore_grade)||null},
     source:found ? {id:found.source.id,name:found.source.name,url:`${found.source.base}/product/${barcode}`} : null,
     match:match ? {...match, levelLabel:levelCopy[match.level][lang]} : null,
-    gs1:prefix ? {prefix:barcode.slice(0,3),organization:prefix[lang],isIsraeliPrefix} : {prefix:barcode.slice(0,3),organization:null,isIsraeliPrefix:false},
+    gs1:prefix ? {prefix:barcode.slice(0,3),organization:prefix[lang],isIsraeliPrefix:israeliPrefix} : {prefix:barcode.slice(0,3),organization:null,isIsraeliPrefix:false},
     explicitIsrael,
     disclaimer:lang === "ar" ? "بادئة GS1 تحدد الجهة التي خصصت الرمز، لا بلد التصنيع أو المنشأ بالضرورة." : "A GS1 prefix identifies the organization that allocated the code—not necessarily the country of manufacture or origin."
   }, {headers:{"Cache-Control":"public, s-maxage=86400, stale-while-revalidate=604800"}});
