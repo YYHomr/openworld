@@ -1,26 +1,29 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import news from "../../../data/news.json";
+import previous from "../../../data/archive/news-2026-07-17.json";
+
+const allNews = [...news, ...previous];
 
 type Article = (typeof news)[number];
 
 export function generateStaticParams() {
-  return news.map((article) => ({ slug: article.slug }));
+  return allNews.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const article = news.find((item) => item.slug === slug);
+  const article = allNews.find((item) => item.slug === slug);
   if (!article) return {};
   return { title: `${article.title} — Worldline`, description: article.dek };
 }
 
 export default async function NewsArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const article = news.find((item) => item.slug === slug) as Article | undefined;
+  const article = allNews.find((item) => item.slug === slug) as Article | undefined;
   if (!article) notFound();
 
-  const related = news.filter((item) => item.slug !== article.slug).slice(0, 3);
+  const related = allNews.filter((item) => item.slug !== article.slug).slice(0, 3);
 
   return (
     <main className="article-page">
