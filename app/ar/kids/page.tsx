@@ -1,0 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata:Metadata={title:"وورلدلاين للأطفال — حكاية فلسطين وغزة",description:"حكاية أطفال مصورة ولطيفة عن فلسطين وغزة والذاكرة والأمل، مع كتاب PDF عربي مجاني."};
+const chapters=[
+  {n:"01",title:"الأرض تتذكر",text:"تمشي لينا وعمر مع الجدة بين أشجار الزيتون والتين. تحكي لهما عن مدن فلسطين وقراها ومزارعها وتقاليد العائلات التي انتقلت بين الأجيال.",image:"/images/kids/olive-jerusalem.jpg"},
+  {n:"02",title:"المفتاح يحكي",text:"يفتح مفتاح نحاسي حواراً عن نكبة 1948، حين نزح نحو 750 ألف فلسطيني. تشرح الحكاية الذاكرة والفقد بلطف ومن دون صور مخيفة.",image:"/images/kids/memory-key.jpg"},
+  {n:"03",title:"غزة تزرع الغد",text:"عند شاطئ غزة على البحر المتوسط، يطلق الأطفال الطائرات الورقية ويرممون مدرسة ويزرعون شجرة زيتون صغيرة؛ صورة للحياة العادية والكرامة والأمل.",image:"/images/kids/gaza-hope.jpg"}
+];
+export default function ArabicKidsPage(){return <main className="kids-page ar-page" dir="rtl" lang="ar">
+  <nav className="nav shell kids-nav"><a className="brand" href="/ar">WORLD<span>LINE</span><i/></a><div className="nav-links"><a href="#story">الحكاية</a><a href="#grownups">للكبار</a><a href="/ar/palestine">فلسطين</a><a href="/ar/gaza">غزة</a></div><a className="edition" href="/kids">English ↗</a></nav>
+  <header className="kids-hero"><img src="/images/kids/olive-jerusalem.jpg" alt="لينا وعمر وجدتهما تحت شجرة زيتون أمام القدس"/><div className="kids-hero-shade"/><div className="shell kids-hero-copy"><p>وورلدلاين للأطفال · للأعمار ٧-١١</p><h1>لينا وعمر<br/>و<em>شجرة الزيتون</em></h1><span>رحلة مصورة لطيفة عبر فلسطين وغزة والذاكرة والأمل.</span><div><a href="/downloads/worldline-kids-palestine-gaza-ar.pdf" download>حمّل الكتاب العربي <b>↓</b></a><a href="/downloads/worldline-kids-palestine-gaza-en.pdf" download>English PDF <b>↓</b></a></div></div></header>
+  <section className="kids-intro shell" id="story"><p className="eyebrow"><span/> اقرأوا معاً</p><div><h2>تاريخ صعب،<br/><em>نرويه بعناية.</em></h2><p>تقدم هذه الحكاية المناسبة للصغار تاريخ فلسطين والقدس والنكبة والحياة الثقافية وغزة. تقول الحقيقة بلا مشاهد صادمة، وتذكر القارئ دائماً بأن كل طفل يستحق الأمان والكرامة.</p></div></section>
+  <section className="kids-chapters">{chapters.map((c,i)=><article className="shell kids-chapter" key={c.n}><div className="kids-chapter-image"><img src={c.image} alt=""/></div><div><span>{c.n} / 03</span><h2>{c.title}</h2><p>{c.text}</p><i>{i===2?"حرية · كرامة · أمان · حقوق متساوية":"ذاكرة · عائلة · انتماء"}</i></div></article>)}</section>
+  <section className="kids-grownups" id="grownups"><div className="shell"><div><p className="eyebrow light"><span/> ملاحظة للأهل والمعلمين</p><h2>توقفوا. اسمعوا.<br/>دعوا الصغار يسألون.</h2></div><div><p>الكتاب مقدمة لطيفة وليس تاريخاً كاملاً. تتضمن صفحته الأخيرة مصادر من الأمم المتحدة والأونروا واليونيسف واليونسكو لقراءة أعمق أو أحدث.</p><ul><li><b>01</b> بلا صور صادمة أو مخيفة</li><li><b>02</b> تمييز واضح بين التاريخ والأمل</li><li><b>03</b> رسوم كرتونية أصلية</li><li><b>04</b> نسختان عربـية وإنجليزية مجانيتان</li></ul><a href="/downloads/worldline-kids-palestine-gaza-ar.pdf" download>حمّل الكتاب من 9 صفحات ↓</a></div></div></section>
+  <footer className="footer shell"><a className="brand" href="/ar">WORLD<span>LINE</span><i/></a><p>حكايات تساعد الصغار على التذكر والتساؤل والاهتمام.</p><p>© 2026 وورلدلاين للأطفال</p></footer>
+  </main>}
