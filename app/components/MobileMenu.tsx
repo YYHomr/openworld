@@ -5,13 +5,13 @@ import { usePathname } from "next/navigation";
 
 const menu = {
   en:[
-    {title:"Start",links:[["Home","/"],["Latest stories","/#latest"],["AI news","/ai"]]},
+    {title:"Start",links:[["Home","/"],["Latest stories","/#latest"],["News by date","/date"],["AI news","/ai"]]},
     {title:"Stories",links:[["Kids stories","/kids"],["Palestine","/palestine"],["Gaza","/gaza"],["The true story","/palestine/the-true-story"]]},
     {title:"Research",links:[["Research desk","/research"],["Palestine dossier","/research/palestine"],["Sudan dossier","/research/sudan"],["African hunger","/research/african-hunger"]]},
     {title:"Take action",links:[["WLB boycott scanner","/wlb"],["About Worldline","/about"]]}
   ],
   ar:[
-    {title:"البداية",links:[["الرئيسية","/ar"],["أحدث القصص","/ar#latest"],["أخبار الذكاء الاصطناعي","/ar/ai"]]},
+    {title:"البداية",links:[["الرئيسية","/ar"],["أحدث القصص","/ar#latest"],["الأخبار حسب التاريخ","/ar/date"],["أخبار الذكاء الاصطناعي","/ar/ai"]]},
     {title:"حكايات",links:[["قصص الأطفال","/ar/kids"],["فلسطين","/ar/palestine"],["غزة","/ar/gaza"],["القصة الحقيقية","/ar/palestine/the-true-story"]]},
     {title:"الأبحاث",links:[["مكتب الأبحاث","/ar/research"],["ملف فلسطين","/ar/research/palestine"],["ملف السودان","/ar/research/sudan"],["الجوع في أفريقيا","/ar/research/african-hunger"]]},
     {title:"شارك",links:[["ماسح المقاطعة WLB","/ar/wlb"],["عن وورلدلاين","/ar/about"]]}
