@@ -12,7 +12,7 @@ export default function Home() {
         <nav className="nav shell" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Worldline home">WORLD<span>LINE</span><i /></a>
           <div className="nav-links">
-            <a href="#latest">Latest</a><a href="/date">By date</a><a href="/wlb">WLB</a><a href="/kids">Kids</a><a href="/ai">AI</a><a href="/research">Research</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/about">About</a>
+            <a href="#latest">Latest</a><a href="/war">War live</a><a href="/date">By date</a><a href="/wlb">WLB</a><a href="/kids">Kids</a><a href="/ai">AI</a><a href="/research">Research</a><a href="/palestine">Palestine</a><a href="/gaza">Gaza</a><a href="/about">About</a>
           </div>
           <a className="edition" href="/date/2026-07-18">18 July edition <span>↗</span></a>
         </nav>
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
 
-      <section className="home-ai"><div className="shell home-ai-grid"><div><p className="eyebrow"><span/> Live automatic feed</p><h2>AI news,<br/><em>updated itself.</em></h2></div><p>Fresh reporting on models, research, policy and companies, pulled from an open global news database every 15 minutes.</p><a href="/ai">Open the AI desk ↗</a></div></section>
+      <section className="home-war"><div className="shell home-war-grid"><div><p className="eyebrow light"><span/> Live desk · updates every 5 minutes</p><h2>Iran–Israel–U.S.<br/><em>war, mapped.</em></h2></div><p>Live sourced headlines and a dotted world map showing direct escalation, regional exposure and limited spillover.</p><a href="/war">Open the war desk ↗</a></div></section>\n\n      <section className="home-ai"><div className="shell home-ai-grid"><div><p className="eyebrow"><span/> Live automatic feed</p><h2>AI news,<br/><em>updated itself.</em></h2></div><p>Fresh reporting on models, research, policy and companies, pulled from an open global news database every 15 minutes.</p><a href="/ai">Open the AI desk ↗</a></div></section>
 
       <section className="home-research"><div className="shell"><div className="home-research-head"><div><p className="eyebrow light"><span/> Deep research · verified 18 July 2026</p><h2>Memory,<br/><em>with receipts.</em></h2></div><p>Five sourced dossiers from a Palestinian and Arab perspective—clear about our position, precise about the evidence.</p><a href="/research">Open the research desk ↗</a></div><div className="home-research-list"><a href="/research/palestine"><span>01</span><b>Palestine</b><i>Law, land and life ↗</i></a><a href="/research/sudan"><span>02</span><b>Sudan</b><i>Civilians before generals ↗</i></a><a href="/research/african-hunger"><span>03</span><b>African hunger</b><i>Famines are made ↗</i></a><a href="/research/trump"><span>04</span><b>Trump</b><i>Power and Palestine ↗</i></a><a href="/research/netanyahu"><span>05</span><b>Netanyahu</b><i>Command and accountability ↗</i></a></div></div></section>
 
